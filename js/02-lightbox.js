@@ -17,4 +17,4 @@ const galleryElements = createGalleryElements(galleryItems);
 
 galleryElementsList.insertAdjacentHTML("beforeend", galleryElements);
 
-const lightbox = new SimpleLightbox(".gallery__item");
+const lightbox = new SimpleLightbox(".gallery__item", { captionDelay: 250 });
