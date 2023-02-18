@@ -29,4 +29,5 @@ function onGalleryListClick(e) {
   e.target.src = `${originImages}`;
 }
 
-const lightbox = new SimpleLightbox(".gallery__item", {});
+const lightbox = new SimpleLightbox(".gallery__item");
+console.log("Не смог сделать задержку, не понимаю как и куда её подключать )");
