@@ -29,11 +29,12 @@ function onGalleryContainerClick(e) {
     return;
   }
   e.preventDefault();
-  const originImages = e.target.dataset.source;
-  e.target.src = `${originImages}`;
+
+  e.target.src = `${e.target.dataset.source}`;
+
   const modal = basicLightbox.create(`
   <img
-  src="${originImages}"
+  src="${e.target.dataset.source}"
   alt="picture"
   />
 `);
