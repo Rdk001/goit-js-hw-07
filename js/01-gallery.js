@@ -28,9 +28,6 @@ function onGalleryContainerClick(e) {
   if (!isGalleryElement) {
     return;
   }
-  e.preventDefault();
-
-  e.target.src = `${e.target.dataset.source}`;
 
   const modal = basicLightbox.create(`
   <img
@@ -39,4 +36,6 @@ function onGalleryContainerClick(e) {
   />
 `);
   modal.show();
+
+  e.preventDefault();
 }
